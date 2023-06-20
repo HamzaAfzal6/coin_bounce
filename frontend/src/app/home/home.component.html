@@ -1,0 +1,13 @@
+<div class="header"><b>Latest Articles</b></div>
+<div class="grid-container">
+  <mat-spinner class="cntr" *ngIf="loading"></mat-spinner>
+
+
+    <ng-container  *ngFor="let item of news; let i = index" >
+      <div class="grid" *ngIf="i < 20" (click)="browseToUrl(item.url)">
+        <img class="img" [src]="item.urlToImage" alt="Image">
+        <h3 class="title">{{ item.title }}</h3>
+      </div>
+    </ng-container>
+  
+</div>

@@ -1,0 +1,38 @@
+*{
+  background-color: rgb(24, 24, 19);
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  
+  }
+  body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+    background-color: rgb(24, 24, 19);
+  }
+
+     
+    .container {
+      height:100%;
+    }
+    
+      .layout{
+          padding: 20px;
+          margin: 20px;
+          display: flex;
+          flex-direction: column;
+          min-height:90vh;
+      }
+      .main{
+          flex: 1 ;
+      }
+      .separator {
+          height: 2px; /* Set the height of the separator */
+          background: linear-gradient(to right,transparent, #cbc553,transparent); /* Gradient background */
+          margin: 10px 0; /* Add margin around the separator */
+        }
+        .container {
+          background-color: rgb(24, 24, 19);
+        }

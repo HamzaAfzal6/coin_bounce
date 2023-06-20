@@ -1,0 +1,21 @@
+<div class="loginWrapper">
+<div class="loginHeader">Log-in to your Account</div>
+<mat-spinner *ngIf="loading"></mat-spinner>
+<form class="login-form" [formGroup]="loginform" *ngIf="!loading">
+
+    <mat-form-field>
+        <mat-label>UserName</mat-label>
+        <input matInput type="text" formControlName="username">
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+    </mat-form-field><br>
+    <button mat-raised-button    color="primary" (click)="onSubmit()">Sign In</button>
+    
+<br>
+    <span>Not having an Account? <a [routerLink]="'signup'" class="createAccount">Register</a></span>
+
+</form>
+
+</div>

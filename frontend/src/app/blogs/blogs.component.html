@@ -1,0 +1,45 @@
+<ng-template [ngIf]="allblogs">
+  <h1>Latest Blogs</h1>
+  <button mat-button color="primary" class="bpost" (click)="postblog()">Post a Blog</button>
+  <div class="container">
+    <mat-spinner class="cntr" *ngIf="loading"></mat-spinner>
+    <ng-container *ngFor="let blog of blogs">
+      <div class="grid" (click)="clickit(blog._id)">
+        <img src="{{ blog.photopath }}" class="img">
+        <h2 class="title">{{ blog.title }}</h2>
+        <br>
+      </div>
+      <br>
+    </ng-container>
+  </div>
+</ng-template>
+
+<ng-template [ngIf]="!allblogs">
+  <h1>Blog</h1>
+  <div class="container">
+    <mat-spinner class="cntr" *ngIf="loading"></mat-spinner>
+    <ng-container *ngFor="let item of blog">
+      <h2 class="title">{{ item.blog.title }}</h2><br>
+      <img [src]="item.blog.photo" class="img"><br>
+      <p class="content">{{ item.blog.content }}</p>
+    </ng-container>
+  </div>
+<h3 class="heading"><b>Comments:</b></h3>
+<div class="comments-container" *ngFor="let comment of comments">
+    <div><b class="heading">{{ comment.authorUsername }}</b> : &nbsp; {{ comment.comment }}</div>
+     </div>
+    
+      
+    <form >
+      <mat-form-field class="full-width">
+
+          
+        <input matInput type="text" name="comment" [(ngModel)]='comment'  placeholder="Leave a comment">
+
+        </mat-form-field>
+        <button mat-button color="primary" (click)="post()">Post</button>
+      </form>
+    
+    
+  
+</ng-template>

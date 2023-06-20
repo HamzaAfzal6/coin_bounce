@@ -1,0 +1,90 @@
+.grid {
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    width: 30%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px; /* Adjusted the height to a fixed value */
+  }
+  .divider{
+    background-color:#940909;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Added to center the container horizontally */
+    justify-content: center; /* Added to center the container vertically */
+    margin-top: 25px;
+  }
+  
+  .cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  .img {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .title {
+    text-align: left;
+    background-color: transparent;
+  }
+  .comments-container {
+    /* Add desired styles for the container */
+   // border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .comment {
+    /* Add desired styles for each individual comment */
+    margin-bottom: 10px;
+  }
+  
+  .heading {
+    /* Add desired styles for the author username */
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 187, 255);
+  }
+  .bpost {
+    position: fixed;
+    top: 200px;
+    right: 20px;
+  }
+  
+  .comment p {
+    /* Add desired styles for the comment content */
+    font-size: 14px;
+    color: #666;
+  }
+  .full-width {
+    width: 700px;
+  }
+  .mat-expansion-panel-header {
+    background-color: #494949; 
+    color: #ffffff; 
+  }
+  
+  
+  .mat-expansion-panel-content {
+    background-color: #ffffff; 
+    color: #333333;
+  }

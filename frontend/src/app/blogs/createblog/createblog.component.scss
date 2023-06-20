@@ -1,0 +1,26 @@
+.Wrapper{
+
+    margin: 0 auto;
+    width : 80%;
+    padding: 20px;
+  
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choose-file-input {
+      padding: 6px 2px;
+      /* border: 1px solid #ccc; */
+      /* border-radius: 4px; */
+      background-color: #000000;
+      /* font-size: 14px; */
+      color: #332;
+    }
+    

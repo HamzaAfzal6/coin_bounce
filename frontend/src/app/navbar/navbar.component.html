@@ -1,0 +1,22 @@
+<nav class="navbar" >
+  <a class="logo">CoinBounce</a>
+  <div >
+    <a [routerLink]="'home'" routerLinkActive="activeStyle" [class.inActiveStyle]="!isActive">Home</a>
+    <a [routerLink]="'crypto'" routerLinkActive="activeStyle" [class.inActiveStyle]="!isActive">Crypto-Currencies</a>
+    <a [routerLink]="'blogs'" routerLinkActive="activeStyle" [class.inActiveStyle]="!isActive">Blogs</a>
+    <a [routerLink]="'photo'" routerLinkActive="activeStyle" [class.inActiveStyle]="!isActive">PhotoVariation</a>
+  </div>
+  <nav>
+    <ng-container *ngIf="isAuthenticated; else loggedOutTemplate">
+      <button class="logoutButton" (click)="logOut()">Logout</button>
+    </ng-container>
+    <ng-template #loggedOutTemplate>
+      <a [routerLink]="'login'">
+        <button class="loginButton">Sign In</button>
+      </a> &nbsp;
+      <a [routerLink]="'signup'">
+        <button class="signupButton">Sign Up</button>
+      </a>
+    </ng-template>
+  </nav>
+</nav>

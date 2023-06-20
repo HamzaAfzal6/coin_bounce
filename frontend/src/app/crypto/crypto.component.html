@@ -1,0 +1,28 @@
+
+<table>
+    <thead>
+      <tr>
+          <th>Symbol</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>MarketCap</th>
+        <th>24H</th>
+       
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of crypto">
+          <td><img [src]="user.image" alt="Crypto Image"></td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.current_price }} USD</td>
+        <td>{{ user.market_cap }}</td>
+        <td>{{user.price_change_percentage_24h}}%</td>
+       
+  
+       
+        
+      </tr>
+    </tbody>
+    
+  </table>
